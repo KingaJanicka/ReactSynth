@@ -1,7 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-const HeaderStyle = {color: "#0fffff", textDecoration: "underline"};
+import React from "react";
+import Oscillator from "./Oscillator";
+import Synth from "./Synth";
+import "./App.css";
+const HeaderStyle = { color: "#0fffff", textDecoration: "underline" };
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,9 @@ function App() {
           Learn React
         </a> */}
         <h1 style={HeaderStyle}>React Synth</h1>
+        <Synth>
+          <Oscillator />
+        </Synth>
       </header>
     </div>
   );
